@@ -1,0 +1,9 @@
+Cake 25
+Soup 18
+Burger 30
+Potato 28
+Pork 45
+Cola 15
+Sprite 15
+Water 10
+Vodka 40
