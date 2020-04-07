@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 namespace Classes
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            
+           
+
             Console.ReadLine();
         }
         public static void UseShapes()
@@ -20,6 +21,16 @@ namespace Classes
             list.Add(recktangle);
             Drawer.DrawPicture(list);
         }
-            
+        public static void UseDbConnections()
+        {
+            var sql = new SqlConnection("Sql connection");
+            var oracle = new OracleConnection("Oracle connection");
+
+            var command = new DbCommand(oracle, "Oracle instruction");
+            var command2 = new DbCommand(sql, "Sql instruction");
+            command.Execute();
+            command2.Execute();
+
+        }
     }    
 }
